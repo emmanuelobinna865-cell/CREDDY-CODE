@@ -1,0 +1,530 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Stay | Chill & Stay</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span>Chill</span> & Stay
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="rooms.html">Rooms</a>
+
+            <a href="gallery.html">Gallery</a>
+
+            <a href="booking.html" class="active">
+                Booking
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <a href="booking.html" class="nav-button">
+            Book Now
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<main>
+
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span>CHILL & STAY</span>
+
+        <h1>
+            Book Your Stay
+        </h1>
+
+        <p>
+            Tell us when you'd like to stay with us.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<section class="section-padding booking-section">
+
+    <div class="container booking-grid">
+
+
+        <!-- BOOKING FORM -->
+
+        <div class="booking-form-wrapper">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    RESERVATION
+                </span>
+
+                <h2>
+                    Make your
+                    <span>reservation.</span>
+                </h2>
+
+                <p>
+                    Complete the form and we'll get back to you
+                    to confirm your reservation.
+                </p>
+
+            </div>
+
+
+            <form id="bookingForm" class="booking-form">
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="firstName">
+                            First Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Enter your first name"
+                            required
+                        >
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="lastName">
+                            Last Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Enter your last name"
+                            required
+                        >
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Your phone number"
+                            required
+                        >
+
+                        <small class="form-error"></small>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="checkIn">
+                            Check-in
+                        </label>
+
+                        <input
+                            type="date"
+                            id="checkIn"
+                            name="checkIn"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="checkOut">
+                            Check-out
+                        </label>
+
+                        <input
+                            type="date"
+                            id="checkOut"
+                            name="checkOut"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="roomType">
+                            Room Type
+                        </label>
+
+                        <select
+                            id="roomType"
+                            name="roomType"
+                            required
+                        >
+
+                            <option value="">
+                                Select a room
+                            </option>
+
+                            <option value="Classic Chill Room">
+                                Classic Chill Room
+                            </option>
+
+                            <option value="Deluxe Stay Suite">
+                                Deluxe Stay Suite
+                            </option>
+
+                            <option value="Executive Chill Suite">
+                                Executive Chill Suite
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guests">
+                            Number of Guests
+                        </label>
+
+                        <select
+                            id="guests"
+                            name="guests"
+                            required
+                        >
+
+                            <option value="">
+                                Select guests
+                            </option>
+
+                            <option value="1">
+                                1 Guest
+                            </option>
+
+                            <option value="2">
+                                2 Guests
+                            </option>
+
+                            <option value="3">
+                                3 Guests
+                            </option>
+
+                            <option value="4">
+                                4 Guests
+                            </option>
+
+                            <option value="5">
+                                5+ Guests
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Special Request
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Any special requests?"
+                    ></textarea>
+
+                </div>
+
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary booking-submit"
+                >
+
+                    Send Booking Request
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- BOOKING INFORMATION -->
+
+        <aside class="booking-sidebar">
+
+
+            <div class="booking-info-card">
+
+                <div class="booking-info-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <h3>
+                    Need help?
+                </h3>
+
+                <p>
+                    Speak directly with Chill & Stay.
+                </p>
+
+                <a href="tel:09138848024">
+                    09138848024
+                </a>
+
+            </div>
+
+
+
+            <div class="booking-info-card">
+
+                <div class="booking-info-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <h3>
+                    Email us
+                </h3>
+
+                <p>
+                    Send us your questions or requests.
+                </p>
+
+                <a href="mailto:emmanuelobinna865@gmail.com">
+                    emmanuelobinna865@gmail.com
+                </a>
+
+            </div>
+
+
+
+            <div class="booking-info-card">
+
+                <div class="booking-info-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <h3>
+                    Flexible support
+                </h3>
+
+                <p>
+                    Contact us anytime for booking assistance.
+                </p>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">
+                <span>Chill</span> & Stay
+            </a>
+
+            <p>
+                Comfortable spaces and beautiful experiences.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Pages
+            </h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <a href="tel:09138848024">
+                <i class="fa-solid fa-phone"></i>
+                09138848024
+            </a>
+
+            <a href="mailto:emmanuelobinna865@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                emmanuelobinna865@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Chill & Stay.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span id="toastMessage">
+        Message sent successfully.
+    </span>
+
+</div>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,354 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Chill & Stay</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container navbar">
+
+        <a href="index.html" class="logo">
+            <span>Chill</span> & Stay
+        </a>
+
+        <nav class="nav">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+        <a href="booking.html" class="nav-button">
+            Book Now
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span>CHILL & STAY</span>
+
+        <h1>Our Gallery</h1>
+
+        <p>
+            Take a look at the Chill & Stay experience.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section-padding">
+
+    <div class="container">
+
+        <div class="section-heading centered">
+
+            <span class="section-label">
+                EXPLORE OUR SPACE
+            </span>
+
+            <h2>
+                See where you'll
+                <span>stay.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-filters">
+
+            <button class="gallery-filter active" data-gallery="all">
+                All
+            </button>
+
+            <button class="gallery-filter" data-gallery="rooms">
+                Rooms
+            </button>
+
+            <button class="gallery-filter" data-gallery="interior">
+                Interior
+            </button>
+
+            <button class="gallery-filter" data-gallery="exterior">
+                Exterior
+            </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="rooms"
+                data-gallery-image="room-1"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-bed"></i>
+
+                    <span>
+                        Classic Room
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="rooms"
+                data-gallery-image="room-2"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-couch"></i>
+
+                    <span>
+                        Deluxe Suite
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="interior"
+                data-gallery-image="interior-1"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-chair"></i>
+
+                    <span>
+                        Relaxation Area
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="interior"
+                data-gallery-image="interior-2"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-tv"></i>
+
+                    <span>
+                        Living Space
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="exterior"
+                data-gallery-image="exterior-1"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    <span>
+                        Exterior
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+
+            <div
+                class="gallery-item"
+                data-gallery-category="rooms"
+                data-gallery-image="room-3"
+            >
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-solid fa-crown"></i>
+
+                    <span>
+                        Executive Suite
+                    </span>
+
+                </div>
+
+                <button class="gallery-view">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <button class="lightbox-prev" id="lightboxPrev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <div class="lightbox-content">
+
+        <div class="lightbox-placeholder">
+
+            <i class="fa-solid fa-image"></i>
+
+            <span id="lightboxTitle">
+                Chill & Stay
+            </span>
+
+        </div>
+
+    </div>
+
+    <button class="lightbox-next" id="lightboxNext">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo">
+                <span>Chill</span> & Stay
+            </a>
+
+            <p>
+                Comfortable spaces and beautiful experiences.
+            </p>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Pages</h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+        <div class="footer-column">
+
+            <h3>Contact</h3>
+
+            <a href="tel:09138848024">
+                <i class="fa-solid fa-phone"></i>
+                09138848024
+            </a>
+
+            <a href="mailto:emmanuelobinna865@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                emmanuelobinna865@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © 2026 Chill & Stay. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
+```
